@@ -1,87 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<p>Set timer, and presto! You've got a timer!".</p>
-<p>Set your background and you have a timer with a background! :o :o :o</p>
-<tbody>
-	<tr>
-		<td align="center" valign="middle" width="100%" height="100%">
-		<div id="countdownDisp">
-			<img height="100" src="http://timer.onlineclock.net/numerals/c0.gif" width="72" name="h" id="h" alt="Minutes" title="Minutes">
-			<img height="100" src="http://timer.onlineclock.net/numerals/c0.gif" width="72" name="i" id="i" alt="Minutes" title="Minutes">
-			<img height="100" src="http://timer.onlineclock.net/numerals/colon.gif" width="36" name="j" id="j" alt=":" title=":">
-			<img height="100" src="http://timer.onlineclock.net/numerals/c0.gif" width="72" name="k" id="k" alt="Seconds" title="Seconds">
-			<img height="100" src="http://timer.onlineclock.net/numerals/c0.gif" width="72" name="l" id="l" alt="Seconds" title="Seconds">
-</div>
-<form name="minutesForm" id="minutesForm" style="margin-top:0px;margin-bottom:0px;" title="Minute Timer" action="http://timer.onlineclock.net/alarm.html" method="post">
-	<select name="minutesSelect" id="minutesSelect" onchange="doMinuteTimer();" title="Select Minutes" style="font-size:20px;">
-		<option value="OFF" selected="">OFF</option>
-		<option value="4">5 Seconds (Test)</option>
-		<option value="29">30 Seconds</option>
-		<option value="59">1 Minute</option>
-		<option value="119">2 Minutes</option>
-		<option value="179">3 Minutes</option>
-		<option value="239">4 Minutes</option>
-		<option value="299">5 Minutes</option>
-		<option value="359">6 Minutes</option>
-		<option value="419">7 Minutes</option>
-		<option value="479">8 Minutes</option>
-		<option value="539">9 Minutes</option>
-		<option value="599">10 Minutes</option>
-		<option value="659">11 Minutes</option>
-		<option value="719">12 Minutes</option>
-		<option value="779">13 Minutes</option>
-		<option value="839">14 Minutes</option>
-		<option value="899">15 Minutes</option>
-		<option value="959">16 Minutes</option>
-		<option value="1019">17 Minutes</option>
-		<option value="1079">18 Minutes</option>
-		<option value="1139">19 Minutes</option>
-		<option value="1199">20 Minutes</option>
-		<option value="1259">21 Minutes</option>
-		<option value="1319">22 Minutes</option>
-		<option value="1379">23 Minutes</option>
-		<option value="1439">24 Minutes</option>
-		<option value="1499">25 Minutes</option>
-		<option value="1559">26 Minutes</option>
-		<option value="1619">27 Minutes</option>
-		<option value="1679">28 Minutes</option>
-		<option value="1739">29 Minutes</option>
-		<option value="1799">30 Minutes</option>
-		<option value="1859">31 Minutes</option>
-		<option value="1919">32 Minutes</option>
-		<option value="1979">33 Minutes</option>
-		<option value="2039">34 Minutes</option>
-		<option value="2099">35 Minutes</option>
-		<option value="2159">36 Minutes</option>
-		<option value="2219">37 Minutes</option>
-		<option value="2279">38 Minutes</option>
-		<option value="2339">39 Minutes</option>
-		<option value="2399">40 Minutes</option>
-		<option value="2459">41 Minutes</option>
-		<option value="2519">42 Minutes</option>
-		<option value="2579">43 Minutes</option>
-		<option value="2639">44 Minutes</option>
-		<option value="2699">45 Minutes</option>
-		<option value="2759">46 Minutes</option>
-		<option value="2819">47 Minutes</option>
-		<option value="2879">48 Minutes</option>
-		<option value="2939">49 Minutes</option>
-		<option value="2999">50 Minutes</option>
-		<option value="3059">51 Minutes</option>
-</select>
-</form>
-<script>
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-477189-6']);
-  _gaq.push(['_setDomainName', 'onlineclock.net']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-
+	<p> Timer </p>
+	<p id="clock"></p>
+	<button onclick="startTimer()">Click to set timer</button>
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
