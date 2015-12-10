@@ -1,19 +1,55 @@
 body {
-	text-align: center;
-	font-size: 40px;
 	font-family: Futura;
-	background-color: #FFFFA6;
-}
-
-button{
-	background: white;
+	background-color: white;
+	text-align: center;
 	font-size: 20px;
 }
 
+button{
+	margin      : 0;
+  padding     : 0;
+  border      : 0;
+  background  : transparent;
+  font-family : inherit;
+  font-size   : 40px;
+  cursor      : pointer;
+}
+
 button:hover{
-	background: ;
+	background: #FBBC05;
 }
 
 #clock{
 	font-family: arial,sans-serif;
+	font-size: 160px;
+
+}
+
+#blue{
+	color: #4285F4;
+	font-size: 100px;
+	margin      : 0;
+	padding     : 0;
+	border      : 0;
+}
+#yellow{
+	color: #FBBC05;
+	font-size: 100px;
+	margin      : 0;
+	padding     : 0;
+	border      : 0;
+}
+#red{
+	color: #EA4335;
+	font-size: 100px;
+	margin      : 0;
+	padding     : 0;
+	border      : 0;
+}
+#green{
+	color: #34A853;
+	font-size: 100px;
+	margin      : 0;
+	padding     : 0;
+	border      : 0;
 }
